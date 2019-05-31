@@ -1,0 +1,57 @@
+.footer-container {
+  @include xy-grid-container;
+  background: #000 url(http://localhost/defero/wp-content/uploads/2019/05/dots-bg.png) center repeat;
+  background-size: cover;
+  margin: 0 auto;
+  border-top: 1px solid #e1e1e1;
+  width: 100%;
+  max-width:100%;
+
+.footer-grid {
+  padding: rem-calc(30) 0;
+  text-align:center;
+  flex-flow: column wrap;
+ .widget_text {
+   color:#fff;
+   margin: 20px auto;
+   a {
+     color:#fff;
+     text-decoration: underline;
+     margin-right:7px;
+   }
+ }
+ .social-icons {
+   .icon-posts {
+    display: flex;
+    justify-content: center;
+   }
+ }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+}
+.footer-button {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: inherit;
+  padding: .85em 1em;
+  border: 1px solid transparent;
+  border-radius: 0;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #598527;
+  color: #fefefe;
+  font-weight: 700;
+  min-width: 140px;
+  height: 43px;
+  border-radius: 6px;
+  text-transform: lowercase;
+  margin:0px auto;
+  &:hover {
+    color:#ffffff;
+  }
+}

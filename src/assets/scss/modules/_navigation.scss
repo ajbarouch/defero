@@ -1,0 +1,137 @@
+// Navigation breakpoints
+.mobile-menu,
+.site-title-bar {
+  @include hide-for(large);
+}
+//
+.desktop-menu,
+.site-navigation .top-bar-left {
+  @include show-for(large);
+}
+
+// Site title
+.site-desktop-title a {
+  font-weight: bold;
+}
+
+// WP post navigation
+.post-navigation {
+  @include clearfix;
+}
+.title-bar {
+  background: transparent;
+  .menu-icon {
+    @include breakpoint (large down) {
+      margin-right:10px;
+    }
+  }
+}
+.nav-previous {
+  float:left;
+}
+
+.nav-next {
+  float:right;
+}
+.menu-item {
+  a {
+    color:#ffffff;
+  }
+}
+
+.site-header {
+  max-height:68px;
+  background: #000 url(http://localhost/defero/wp-content/uploads/2019/05/dots-bg.png) center repeat-x;
+  @include breakpoint (large down) {
+   display:flex; 
+   align-items:center;
+  }
+  .site-logo {
+    max-width:100px;
+  }
+  .top-bar {
+    padding:0 .9375rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    max-height:68px;
+    background-color:transparent;
+    @include breakpoint (large down) {
+      margin: 0 0 0 auto;
+    }
+    ul {
+      background-color:transparent;
+    }
+    .top-bar-left {
+      flex: 0 1 auto;
+      margin-right: 0px;
+    }
+    .top-bar-right {
+      flex: 0 1 auto;
+      margin-left: 0px;
+      margin-right: auto;
+      .dropdown.menu {
+        li {
+          a {
+            padding: 1.6rem 1rem;
+            height: 68px;
+            font-size:18px;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: lowercase;
+            &:hover {
+              background-color: #000;
+              color: #fff;
+            }
+            &:active {
+              background-color: #000;
+              color: #fff;
+            }
+            @include breakpoint (large only) {
+              font-size: 1rem;
+              padding-left: .65rem;
+              padding-right: .65rem;
+            }
+          }
+        }
+      }
+    }
+    .top-bar-search {
+      @include breakpoint (small only) {
+        display:none;
+      }
+      .widget_search_widget {
+        .def-input-group {
+          margin-bottom:0px;
+          padding-right: 15px;
+          @include breakpoint (large down) {
+            padding-right:0px;
+          }
+          .input-group-field {
+            height: 34px;
+            font-size: 15px;
+            max-width: 150px;
+          }
+        }
+        .input-group > :last-child.input-group-button > * {
+          background: #598527 url(https://bubbiesicecream.com/wp-content/themes/bubbies/assets/images/icons/icon-search.svg) center no-repeat;
+          height: 34px;
+          width: 32px;
+          border-top-right-radius: 10px;
+          text-indent: -999999px;
+          background-size: 16px;
+        }
+      }
+    }
+  }
+}
+.icon-posts {
+  display:flex;
+  list-style: none;
+  margin:0px;
+  li {
+    margin-right: 10px;
+    @include breakpoint (large down) {
+      margin-right:5px;
+    }
+  }
+}
