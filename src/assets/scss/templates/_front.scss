@@ -243,5 +243,9 @@
   text-align: center;
 }
 .evf-field-checkbox {
-  font-size:12px;
+  li {
+    label {
+      font-size:12px!important;
+    }
+  }
 }
