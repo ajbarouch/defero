@@ -203,23 +203,34 @@
   max-width: 900px;
   margin: 0 auto;
 }
-.everest-forms button[type=submit] {
-  display: inline-block;
-  vertical-align: middle;
-  font-family: inherit;
-  padding: .85em 1em;
-  border: 1px solid transparent;
-  font-size: .9rem;
-  line-height: 1;
-  text-align: center;
-  cursor: pointer;
-  background-color: #598527;
-  color: #fefefe;
-  font-weight: 700;
-  min-width: 140px;
-  height: 43px;
-  border-radius: 6px;
-  text-transform: lowercase;
+.everest-forms { 
+  max-width: 650px;
+  margin: 0 auto;
+  button[type=submit] {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: inherit;
+    padding: .85em 1em;
+    border: 1px solid transparent;
+    font-size: .9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #598527;
+    color: #fefefe;
+    font-weight: 700;
+    min-width: 140px;
+    height: 43px;
+    border-radius: 6px;
+    text-transform: lowercase;
+  }
+  .evf-field-container {
+    .evf-frontend-row {
+      label {
+        font-size:18px;
+      }
+    }
+  }
 }
 .evf-field.evf-field-checkbox {
   ul {

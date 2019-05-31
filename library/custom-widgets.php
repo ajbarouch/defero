@@ -32,6 +32,7 @@ echo $args['before_widget'];
  
 //widget content
 ?>
+      <h2>Follow us on Instagram</h2>
       <ul class="instagram-posts">
       <?php // Create and run custom loop
          $custom_posts = new WP_Query();
