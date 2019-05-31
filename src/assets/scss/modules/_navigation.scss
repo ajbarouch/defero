@@ -20,11 +20,6 @@
 }
 .title-bar {
   background: transparent;
-  .menu-icon {
-    @include breakpoint (large down) {
-      margin-right:10px;
-    }
-  }
 }
 .nav-previous {
   float:left;
@@ -44,7 +39,7 @@
   background: #000 url(http://localhost/defero/wp-content/uploads/2019/05/dots-bg.png) center repeat-x;
   @include breakpoint (large down) {
    display:flex; 
-   align-items:center;
+   align-items:center
   }
   .site-logo {
     max-width:100px;
@@ -56,7 +51,7 @@
     max-height:68px;
     background-color:transparent;
     @include breakpoint (large down) {
-      margin: 0 0 0 auto;
+      margin: auto 0 0 0;
     }
     ul {
       background-color:transparent;
@@ -96,9 +91,6 @@
       }
     }
     .top-bar-search {
-      @include breakpoint (small only) {
-        display:none;
-      }
       .widget_search_widget {
         .def-input-group {
           margin-bottom:0px;
