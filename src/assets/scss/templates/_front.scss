@@ -221,9 +221,11 @@
     text-transform: lowercase;
   }
   .evf-field-container {
+    margin-bottom:15px;
     .evf-frontend-row {
       label {
         font-size:18px;
+        margin:0px;
       }
     }
   }
