@@ -33,10 +33,9 @@
     color:#ffffff;
   }
 }
-
 .site-header {
   max-height:68px;
-  background: #000 url(http://localhost/defero/wp-content/uploads/2019/05/dots-bg.png) center repeat-x;
+  background: #000 url(defero.webnarok.com/wp-content/uploads/2019/05/dots-bg.png) center repeat-x;
   @include breakpoint (large down) {
    display:flex; 
    align-items:center

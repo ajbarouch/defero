@@ -1,12 +1,11 @@
 .footer-container {
   @include xy-grid-container;
-  background: #000 url(http://localhost/defero/wp-content/uploads/2019/05/dots-bg.png) center repeat;
+  background: #000 url(defero.webnarok.com/wp-content/uploads/2019/05/dots-bg.png) center repeat;
   background-size: cover;
   margin: 0 auto;
   border-top: 1px solid #e1e1e1;
   width: 100%;
   max-width:100%;
-
   .footer-grid {
     padding: rem-calc(30) 0;
     text-align:center;
